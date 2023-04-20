@@ -47,7 +47,7 @@
             height="48"
             variant="tonal"
           >
-            <img   src="images/refresh.png"/>Layover 2 hours
+            <img  src="/images/refresh.png"/>Layover 2 hours
           </v-btn>
         </b-col>
       </v-row>
