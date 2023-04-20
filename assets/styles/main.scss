@@ -1,85 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+$them-color: #fc8004;
+
+.theme-bg {
+    background-color: $them-color;
+}
+.flight_card{
+    ul {
+        list-style: disc;
+        li {
+            float: left;
+            margin-left: 20px;
+        }
+    }
+}
+.flag.basic_info {
+    width: 70px!important;
+    height:70px!important;
+}
+
+.color_pink{
+    color:#C2185B;
+
+}
+.v-toolbar__content, .v-toolbar__extension, .v-tabs {
+    button {
+        margin-inline-start:unset!important
+    }
+    .v-tab__slider {
+        bottom: -26px;
+        color: $them-color!important;
+    }
+ height: 92px!important;
+}
+
+
+h1,h2,h3, button {
+    font-family: 'Inter', sans-serif!important;
+
+}
+h4,p, .v-expansion-panel-text__wrapper {
+    font-family: 'Inter', sans-serif!important;
+    font-weight: 400;
+    color:#B0BEC5
+    ;
+
+
+}
+.basic_info, .required_document_wrapper {
+    img {
+        width: 35px;
+    height: 35px;
+    }
+}
+
+.v-toolbar__content {
+    display: none!important;
+}
 .cursor-pointer{
     cursor: pointer;
 }
-
-select {
-    background: rgb(128 128 128 / 10%);;
-    border-radius: 4px;
-}
-.select-wrapper{
-    position: relative;
-    cursor: pointer;
-    &:after {
-        content: "";
-        width: 30px;
-        height: 30px;
-        background:url("/images/down-arrow.png") no-repeat  ;
-        top: 10px;
-        right: 6px;
-        position: absolute;
-        z-index: -1;
-        display: inline-block;
+.bootom_navogation {
+    text-align: center;
+    p {
+        font-size: 12px;
     }
-}
-.currency-table-wrapper {
-.v-field {
-    &:after {
-        content: "";
-        width: 30px;
-        height: 30px;
-        background:url("/images/search.png") no-repeat  ;
-        top: 10px;
-        right: 6px;
-        position: absolute;
-        z-index: -1;
-        display: inline-block;
-    }
+    button {
+        &.start_visa{
+            background-color: $them-color;
+            color: white;
+            height: 57px!important;
+            border-radius: 10px;
+           span{
+            font-family: 'Inter', sans-serif!important;
+            font-weight: 700;
+           }
 
-}
-}
 
-.v-progress-circular {
-    left: 50%;
-transform: translateX(-50%);
-}
-.currency-table {
-    tr {
-        &:first-child {
-            background: rgb(128 128 128 / 37%);
         }
-        th {
-            cursor: pointer;
-            transition: .4s;
-            &:hover {
-                background: rgb(203 199 199);
-                transition: .4s;
+    }
+}
+.v-bottom-navigation {
+    height: 180px!important;
+    img {
+        width: 40px;
+        height:40px;
+    }
+}
+.flag {
+    width: 70px;
+    height:70px;
+    overflow:hidden;
+    border-radius: 60px;
+    .basic_info {
+        width: 90px!important;
+        height:90px!important;
+    }
+}
+.wrapper_flight_info {
+    .v-col {
+        position: relative;
+    }
+    .devider{
+        border-left: 1px solid #bfc4c9;
+        border-right: 1px solid #ccd4db;
+        height: 44px;
+        position: absolute;
+        left: 35px;
+        top: 41px;
+    }
+    border: 1.7px solid #e1cdcd;
+    border-radius: 10px;
+    .flight_card {
+        .flight_info_btn {
+            background-color: #df0c9429;
+            color: #878717;
+            img {
+                width: 30px;
+            }
+        }
+        .flight_info {
+            position: relative;
+            h3 {
+                &:before {
+                    content: "";
+                    width: 24px;
+                    height: 21px;
+                    background: url("/images/airlineA.png") 48% no-repeat;
+                    border-radius: 30px;
+                    background-size: 33px 30px;
+                    position: absolute;
+                    left: 2px;
+                    top: 5px;
+                    z-index: 1;
+                    display: inline-block;
+                }
+                &.second_flight {
+                    &:before {
+                        width: 24px;
+                        height: 21px;
+                        background: url("/images/airlineB.png") 48% no-repeat;
+                        border-radius: 30px;
+                        background-size: 33px 30px;
+                        position: absolute;
+                        left: 2px;
+                        top: 5px;
+                        z-index: 1;
+                        display: inline-block;
+                    }
+                }
+            }
+    
+        
+        }
+    }
+    
+}
 
+.v-expansion-panel-title__icon {
+    &:after {
+        content: "";
+        width: 24px;
+        height: 21px;
+        background: url(/_nuxt/images/fropdown.png) 48% no-repeat;
+        top: 10px;
+        right: 25px;
+        border-radius: 30px;
+        position: absolute;
+        z-index: 1;
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .v-expansion-panel-title__icon {
+    &:after {
+        width: 18px;
+        height: 16px;
+    }
+
+}
+    .basic_info, .required_document_wrapper {
+        img {
+            width: 25px;
+        height: 25px;
+        }
+    }
+    h3 {
+        font-size: 15px!important;
+    }
+    .flag {
+        width: 40px;
+        height:40px;
+        .basic_info {
+            width: 70px!important;
+            height:70px!important;
+        }
+    }
+    .v-toolbar__content, .v-toolbar__extension, .v-tabs {
+        button {
+            margin-inline-start:unset!important
+        }
+        .v-tab__slider {
+            bottom: 3px;
+        }
+     height: 48px!important;
+    }
+    .bootom_navogation {
+        text-align: center;
+        p {
+            font-size: 8px;
+            white-space: nowrap; 
+            width: 50px; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        button {
+            &.start_visa{
+                width: 100%;
+                height: 57px!important;
+                border-radius: 10px;
+               span{
+                font-family: 'Inter', sans-serif!important;
+                font-weight: 700;
+               }
+    
+    
             }
         }
     }
-}
+    .v-bottom-navigation {
+        height: 180px!important;
+        img {
+            width: 35px;
+            height:35px;
+        }
+    }
 
-.pagination-container {
-  display: flex;
-  column-gap: 10px;
 }
-.paginate-buttons {
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  cursor: pointer;
-  background-color: rgb(242, 242, 242);
-  border: 1px solid rgb(217, 217, 217);
-  color: black;
-}
-.paginate-buttons:hover {
-  background-color: #d8d8d8;
-}
-.active-page {
-  background-color: #3498db;
-  border: 1px solid #3498db;
-  color: white;
-}
-.active-page:hover {
-  background-color: #2988c8;
-}
+  
