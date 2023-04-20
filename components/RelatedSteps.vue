@@ -4,7 +4,7 @@
       <li v-for="(item, i) in item.headings" class="mb-8">
 <div class="d-flex align-center pl-2  " >
   <img :src="item.logoImage" v-if="item.logoImage">
-  <img src="images/standard.png" v-else>
+  <img src="/images/standard.png" v-else>
   <h3 class="pl-1">{{item.title}}</h3>
 </div>
 <template v-if='i == 0'>
@@ -24,7 +24,7 @@
   </ul>
 </div>
 <div class="d-flex align-center mt-3" v-if="item.warning" >
-  <img src="images/warning.png" />
+  <img src="/images/warning.png" />
 <p class="pl-1">{{item.warning}}</p>
 </div>
 </template>

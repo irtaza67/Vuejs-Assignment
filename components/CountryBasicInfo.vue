@@ -22,7 +22,7 @@
       >
       <v-col class="">
         <div class="d-flex">
-        <img class="" src="images/info.png">
+        <img class="" src="/images/info.png">
        <p class="color_pink">{{item.basicInfo}}</p>
         </div>
       </v-col>
