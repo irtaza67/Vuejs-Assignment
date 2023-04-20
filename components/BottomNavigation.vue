@@ -18,19 +18,19 @@
           <v-col>
             <div class="d-flex justify-center"> 
             <v-btn>
-              <img class="flag" src="images/search.png" />
+              <img class="flag" src="/images/search.png" />
               <p>Home</p>
             </v-btn>
             <v-btn>
-              <img class="flag" src="images/my-request.png" />
+              <img class="flag" src="/images/my-request.png" />
               <p>My Request</p>
             </v-btn>
             <v-btn>
-              <img class="flag" src="images/my-requirements.png" />
+              <img class="flag" src="/images/my-requirements.png" />
               <p>View Requirements</p>
             </v-btn>
             <v-btn>
-              <img class="flag" src="images/show-more.png" />
+              <img class="flag" src="/images/show-more.png" />
               <p>More</p>
             </v-btn>
             </div>
